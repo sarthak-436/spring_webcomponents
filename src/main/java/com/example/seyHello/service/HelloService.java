@@ -1,11 +1,13 @@
 package com.example.seyHello.service;
 
 import org.springframework.stereotype.Service;
+import com.example.seyHello.model.HelloResponse;
 
 @Service
 public class HelloService {
 
-    public String sayHello() {
-        return "Hello from the Service Layer!";
+    public HelloResponse sayHello() {
+        HelloResponse obj = new HelloResponse("This is the message");
+        return obj;
     }
 }

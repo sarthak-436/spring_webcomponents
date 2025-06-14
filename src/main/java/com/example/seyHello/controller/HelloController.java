@@ -1,6 +1,7 @@
 package com.example.seyHello.controller;
 
 import org.springframework.web.bind.annotation.*;
+import com.example.seyHello.model.HelloResponse;
 import com.example.seyHello.service.HelloService;
 
 @RestController
@@ -13,7 +14,7 @@ public class HelloController {
     }
     
     @GetMapping("/hello")
-    public String hello(){
+    public HelloResponse hello(){
         return helloserviceobject.sayHello();
     }
 }
