@@ -6,8 +6,8 @@ import com.example.seyHello.model.HelloResponse;
 @Service
 public class HelloService {
 
-    public HelloResponse sayHello() {
-        HelloResponse obj = new HelloResponse("This is the message");
+    public HelloResponse sayHello(String name) {
+        HelloResponse obj = new HelloResponse("This is the message for " + name);
         return obj;
     }
 }

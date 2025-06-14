@@ -14,7 +14,7 @@ public class HelloController {
     }
     
     @GetMapping("/hello")
-    public HelloResponse hello(){
-        return helloserviceobject.sayHello();
+    public HelloResponse hello(@RequestParam String name){
+        return helloserviceobject.sayHello(name);
     }
 }
